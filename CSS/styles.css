@@ -1,13 +1,18 @@
 body {
     background-color: #1d1d1d;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Saira', sans-serif;
+    padding: 10px;
+}
+
+header {
+    background: black;
+    padding: 10px 5px;
 }
 
 .banner {
     text-decoration: none;
-    color: rgb(73, 255, 200);
-    display: inline-block;
+    color: rgb(255, 255, 255);
     padding: 5px;
     margin: 5px;
     font-size: 15px;
@@ -15,16 +20,31 @@ body {
 }
 
 .icon {
-    color: rgb(73, 255, 200);
+    color: rgb(255, 255, 255);
 }
 
 .introduction {
-    padding: 0 10px;
+    padding: 80px 0;
+    margin: 80px 0;
+}
+
+.introduction h1 {
+    margin: 0;
+    font-size: 60px;
+    color: rgb(53, 255, 194);
+}
+
+.introduction h1:hover {
+    color: darkgray;
+    transition: all 0.2s;
 }
 
 .introduction p {
+    margin: 0;
     text-align: left;
-    color: rgb(83, 255, 255)
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding-top: 15px;
 }
 
 .skills-container {

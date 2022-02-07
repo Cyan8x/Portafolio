@@ -15,7 +15,7 @@ header {
 }
 
 .container {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -33,27 +33,33 @@ header {
 }
 
 .introduction {
-    padding: 80px 0;
-    margin: 80px 0;
+    padding: 120px 0;
+    margin: 120px 0;
 }
+
 
 .introduction h1 {
+    letter-spacing: -7px;
     margin: 0;
-    font-size: 60px;
-    color: rgb(53, 255, 194);
+    font-size: 53px;
+    color: rgb(255, 255, 255);
 }
 
-.introduction h1:hover {
-    color: darkgray;
+.introduction span:hover {
+    color: rgb(53, 255, 194);
     transition: all 0.2s;
 }
 
 .introduction p {
     margin: 0;
     text-align: left;
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    padding-top: 15px;
+    color: rgb(173, 173, 173);
+    font-size: 19px;
+    padding-top: 30px;
+}
+
+.skills h1, .portfolio h1{
+    color: rgb(53, 255, 194);
 }
 
 .skills-container {

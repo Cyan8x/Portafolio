@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./../CSS/normalize.css">
     <!-- Glide -->
     <link rel="stylesheet" href="./../CSS/glide.core.min.css">
-    <!-- <link rel="stylesheet" href="./../CSS/glide.theme.min.css"> -->
+    <link rel="stylesheet" href="./../CSS/glide.theme.min.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -153,8 +153,10 @@
                             </ul>
                         </div>
                         <div class="glide__arrows" data-glide-el="controls">
-                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
-                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+                            <button style="
+                            transform: scaleX(1);" class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+                            <button style="
+                            transform: scaleX(-1);" class="glide__arrow glide__arrow--right" data-glide-dir=">"></button>
                         </div>
                     </div>
                 </div>
@@ -173,8 +175,32 @@
                 </div>
             </section>
         </main>
+        <footer class="contact">
+            <h1>Contact me</h1>
+            <form class="contact-form" action="">
+                <div class="input-container">
+                    <input type="text" id="nombre" required>
+                    <label class="lbl">
+                        <span>Name</span>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <input type="email" id="email" required>
+                    <label class="lbl">
+                        <span>Email</span>
+                    </label>
+                </div>
+                <div class="input-container">
+                    <textarea id="message" required></textarea>
+                    <label class="lbl">
+                        <span id="msg">Message</span>
+                    </label>
+                </div>
+                <input type="submit" value="enviar">
+            </form>
+        </footer>
     </div>
-    <footer></footer>
+    <!-- Glide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         const config = {

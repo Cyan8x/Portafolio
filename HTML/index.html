@@ -25,12 +25,6 @@
 
 <body>
     <div class="container">
-        <!-- <header style="visibility: hidden;">
-            <a href="./index.html" class="banner">
-                <i class="fas fa-smile-wink icon"></i>
-                <span> <b>Leonardo Salinas</b> </span>
-            </a>
-        </header> -->
         <main>
             <section class="introduction">
                 <h1>
@@ -179,19 +173,19 @@
             <h1>Contact me</h1>
             <form class="contact-form" action="">
                 <div class="input-container">
-                    <input type="text" required>
+                    <input class="field-name" type="text" required>
                     <label class="lbl">
-                        <span>Name</span>
+                        <span id="name">Name</span>
                     </label>
                 </div>
                 <div class="input-container">
-                    <input type="email" id="email" required>
+                    <input class="field-email" type="email" required>
                     <label class="lbl">
-                        <span>Email</span>
+                        <span id="email">Email</span>
                     </label>
                 </div>
                 <div class="input-container">
-                    <textarea id="message" required></textarea>
+                    <textarea class="field-msg" required></textarea>
                     <label class="lbl">
                         <span id="msg">Message</span>
                     </label>
@@ -209,13 +203,23 @@
             type: 'carousel',
             perView: 2,
             breakpoints: {
-                300: {
+                700: {
                     perView: 1
                 }
             }
         }
         new Glide('.glide', config).mount()
     </script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.introduction', {delay: 500});
+        ScrollReveal().reveal('.skills', {delay: 500});
+        ScrollReveal().reveal('.portfolio', {delay: 500});
+        ScrollReveal().reveal('.contact', {delay: 500});
+    </script>
+    <!-- Personal JS -->
+    <script src="./../JS/base.js"></script>
 </body>
 
 </html>

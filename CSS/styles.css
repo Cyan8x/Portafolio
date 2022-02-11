@@ -57,6 +57,7 @@ header {
     color: rgb(173, 173, 173);
     font-size: 19px;
     padding-top: 30px;
+    text-align: justify;
 }
 
 .skills h1, .portfolio h1, .contact h1{
@@ -123,6 +124,16 @@ input[type="submit"]{
     box-shadow: 5px -5px 0 2px rgb(55, 55, 55);
 }
 
+input[type="submit"]:hover{
+    box-shadow: 5px -5px 0 2px rgb(31, 151, 115);
+    background: rgb(55, 55, 55);
+    color: rgb(255, 255, 255);
+}
+
+input[type="submit"]:active{
+    opacity: 0.5;
+}
+
 .input-container{
     width: 100%;
     height: 100%;
@@ -154,17 +165,30 @@ input[type="submit"]{
 
 .lbl span{
     position: absolute;
-    bottom: 15px;
     left: 15px;
     transition: all 0.3s ease;
-    color: rgb(255, 255, 255);
+}
+
+#name, #email{
+    bottom: 15px;
 }
 
 #msg{
-    bottom: 30px;
+    top: 15px;
 }
 
-.input-container input:focus + .lbl span, .input-container input:valid + .lbl span, .input-container textarea:focus + .lbl span, .input-container textarea:valid + .lbl span{
+#message{
+    resize: vertical;
+    max-height: 500px;
+}
+
+.input-container input:focus + .lbl span, .input-container textarea:focus + .lbl span{
+    transform: translateY(-200%);
+    font-size: 20px;
+    color: rgb(53, 255, 194);
+}
+
+.aux{
     transform: translateY(-200%);
     font-size: 20px;
     color: rgb(53, 255, 194);
@@ -174,5 +198,12 @@ input[type="submit"]{
     transform: translateX(0%);
 }
 
+@media (min-width:350px){
+    .introduction h1 {
+        font-size: 62px;
+    }
 
-
+    .glide__slide h3{
+        font-size: 20px;
+    }
+}

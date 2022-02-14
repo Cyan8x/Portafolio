@@ -25,6 +25,15 @@
 
 <body>
     <div class="container">
+        <nav>
+            <div class="nav">
+                <ul>
+                    <li class="nav-li">
+                        <a href="#">My proyects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <main>
             <section class="introduction">
                 <h1>
@@ -159,12 +168,20 @@
                 <h1>My Portfolio</h1>
                 <div class="portafolio-grid">
                     <div>
-                        <img src="./../IMG/SebPolPier.PNG" alt="Proyect SebPolPier">
-                        <h3>SebPolPier</h3>
+                        <a href="#">
+                            <img src="./../IMG/SebPolPier.PNG" alt="Proyect SebPolPier">
+                        </a>
+                        <a href="#" class="proyect-tittle">
+                            <h3>SebPolPier</h3>
+                        </a>
                     </div>
                     <div>
-                        <img src="./../IMG/SebPolPier.PNG" alt="Proyect SebPolPier">
-                        <h3>SebPolPier</h3>
+                        <a href="#">
+                            <img src="./../IMG/SebPolPier.PNG" alt="Proyect SebPolPier">
+                        </a>
+                        <a href="#" class="proyect-tittle">
+                            <h3>SebPolPier</h3>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -172,25 +189,25 @@
         <footer class="contact">
             <h1>Contact me</h1>
             <form class="contact-form" action="">
-                <div class="input-container">
-                    <input class="field-name" type="text" required>
+                <div class="input-container input-name">
+                    <input class="field-name" type="text" >
                     <label class="lbl">
                         <span id="name">Name</span>
                     </label>
                 </div>
-                <div class="input-container">
-                    <input class="field-email" type="email" required>
+                <div class="input-container input-email">
+                    <input class="field-email" type="email" >
                     <label class="lbl">
                         <span id="email">Email</span>
                     </label>
                 </div>
-                <div class="input-container">
-                    <textarea class="field-msg" required></textarea>
+                <div class="input-container textarea">
+                    <textarea class="field-msg message" ></textarea>
                     <label class="lbl">
                         <span id="msg">Message</span>
                     </label>
                 </div>
-                <div class="input-container">
+                <div class="input-container input-submit">
                     <input type="submit" value="SEND MESSAGE">
                 </div>
             </form>
@@ -201,7 +218,7 @@
     <script>
         const config = {
             type: 'carousel',
-            perView: 2,
+            perView: 3,
             breakpoints: {
                 700: {
                     perView: 1

@@ -10,6 +10,13 @@ body {
     padding-bottom: 50px;
 }
 
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/*? NAV */
+
 nav{
     width: 100%;
     height: 60px;
@@ -40,26 +47,15 @@ nav{
 }
 
 .nav-li a:hover{
-    color: rgb(53, 255, 194);;
+    color: rgb(53, 255, 194);
+    border-bottom: 1px solid rgb(53, 255, 194);
 }
 
-.container {
-    width: 80%;
-    margin: auto;
+.nav-li a:active{
+    opacity: 0.5;
 }
 
-.banner {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 5px;
-    margin: 5px;
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-.icon {
-    color: rgb(255, 255, 255);
-}
+/*? INTRODUCTION OR PRESENTATION */
 
 .introduction {
     padding: 170px 0;
@@ -88,6 +84,8 @@ nav{
     text-align: justify;
 }
 
+/*? MY SKILLS*/
+
 .glide__slide{
     text-align: center;
 }
@@ -113,7 +111,7 @@ nav{
 }
 
 .skills, .portfolio, .contact{
-    padding: 100px 0;
+    padding: 120px 0;
 }
 
 .skills-container {
@@ -124,27 +122,128 @@ nav{
     padding: 15px;
 }
 
-.portafolio-grid{
+/*? MY PORTFOLIO */
+
+.portfolio-grid{
     padding: 20px 0;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 25px;
 }
 
-.portafolio-grid img{
+.portfolio-grid img{
     width: 100%;
 }
 
-.portafolio-grid h3{
+.portfolio-grid h3{
     text-align: center;
 }
+
+.proyect-tittle{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+}
+
+.proyect-tittle div{
+    text-align: center;
+}
+
+.proyect-tittle h3{
+    display: inline-block;
+}
+
+.proyect-tittle h3:hover{
+    color: rgb(53, 255, 194);
+    border-bottom: 1px solid rgb(53, 255, 194);
+}
+
+.proyect-tittle h3:active{
+    opacity: 0.5;
+}
+
+.img-efect{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+}
+
+.img-efect img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.proyect-info{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(31, 151, 115,0.8);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.proyect-info h3{
+    margin: 0 15px;
+    font-size: 40px;
+}
+
+.proyect-info p{
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.proyect-info a{
+    display: inline-block;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    background: #1d1d1d;
+}
+
+.proyect-info a:hover{
+    color: rgb(53, 255, 194);
+    border-bottom: 1px solid rgb(53, 255, 194);
+    box-shadow: 0 15px 25px rgb(0, 0, 0,0.5);
+}
+
+.proyect-info a:active{
+    opacity: 0.8;
+}
+
+.img-efect:hover{
+    border-radius: 6px;
+    box-shadow: 0 15px 25px rgb(0, 0, 0,0.5);
+}
+
+.img-efect:hover > .proyect-info{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*? CONTACT ME */
 
 .contact-form{
     display: flex;
     /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    margin: auto;
     position: relative;
     overflow: hidden;
 }
@@ -162,6 +261,7 @@ input[type="text"], input[type="email"], textarea{
 }
 
 input[type="submit"]{
+    margin-top: 60px;
     padding: 10px 20px;
     background: rgb(31, 151, 115);
     color: #fff;
@@ -187,7 +287,6 @@ input[type="submit"]:active{
     /* width: 100%; */
     height: 100%;
     position: relative;
-    margin-top: 40px;
     text-align: center;
     overflow: hidden;
 }
@@ -195,7 +294,7 @@ input[type="submit"]:active{
 .input-name, .input-email{
     padding-top: 40px;
     flex: 1;
-    margin: 0 15px;
+    margin-left: 15px;
 }
 
 .textarea{
@@ -244,12 +343,6 @@ input[type="submit"]:active{
     top: 60px;
 }
 
-.proyect-tittle{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 23px;
-}
-
 .message{
     resize: vertical;
     min-height: 200px;
@@ -270,8 +363,4 @@ input[type="submit"]:active{
 
 .input-container  input:focus + .lbl:after, .input-container textarea:focus + .lbl:after{
     transform: translateX(0%);
-}
-
-.incorrect{
-    border-bottom: 2px solid rgb(255, 53, 53);
 }

@@ -139,29 +139,6 @@ nav{
     text-align: center;
 }
 
-.proyect-tittle{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 23px;
-}
-
-.proyect-tittle div{
-    text-align: center;
-}
-
-.proyect-tittle h3{
-    display: inline-block;
-}
-
-.proyect-tittle h3:hover{
-    color: rgb(53, 255, 194);
-    border-bottom: 1px solid rgb(53, 255, 194);
-}
-
-.proyect-tittle h3:active{
-    opacity: 0.5;
-}
-
 .img-efect{
     width: 100%;
     display: flex;
@@ -239,7 +216,6 @@ nav{
 
 .contact-form{
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
     align-items: center;
     width: 90%;
@@ -363,4 +339,129 @@ input[type="submit"]:active{
 
 .input-container  input:focus + .lbl:after, .input-container textarea:focus + .lbl:after{
     transform: translateX(0%);
+}
+
+/* RESPONSIVE */
+
+@media (max-width:999px){
+    .introduction h1{
+        font-size: 170px;
+        letter-spacing: -25px;
+    }
+
+    .introduction p{
+        font-size: 20px;
+    }
+
+    .portfolio-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:799px){
+    .nav-li{
+        padding: 0 20px;
+    }
+
+    .container{
+        width: 80%;
+    }
+
+    .introduction h1{
+        font-size: 120px;
+        letter-spacing: -18px;
+    }
+
+    .introduction p{
+        font-size: 18px;
+        padding-left: 0;
+        padding-top: 10px
+    }
+
+    .glide__slide div h3{
+        font-size: 20px;
+    }
+
+    .glide__slide div ul{
+        font-size: 18px;
+    }
+
+    .skills h1, .portfolio h1, .contact h1{
+        font-size: 75px;
+    }
+
+    .contact-form{
+        width: 100%;
+    }
+}
+
+@media (max-width:599px){
+    .introduction h1{
+        font-size: 80px;
+        letter-spacing: -12px;
+    }
+
+    .skills h1, .portfolio h1, .contact h1{
+        font-size: 50px;
+    }
+
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .input-container{
+        width: 100%;
+        margin: 0;
+    }
+
+    .proyect-info h3{
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .proyect-info p{
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .proyect-info a{
+        border-radius: 10px;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width:399px){
+    .nav{
+        width: 100%;
+    }
+
+    .introduction h1{
+        font-size: 50px;
+        letter-spacing: -7px;
+    }
+
+    .introduction p{
+        font-size: 15px;
+    }
+
+    .glide__slide div h3{
+        font-size: 18px;
+    }
+
+    .glide__slide div ul{
+        font-size: 15px;
+    }
+
+    .skills h1, .portfolio h1, .contact h1{
+        font-size: 35px;
+    }
+
+    .contact-form{
+        flex-direction: column;
+    }
+
+    .input-container{
+        width: 100%;
+        margin: 0;
+    }
 }

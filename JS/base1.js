@@ -29,3 +29,17 @@ textarea[0].addEventListener('keyup',function(){
         lbl_msg.classList.remove('aux');
     }
 })
+
+
+const ham = document.querySelector('.ham');
+const links = document.querySelector('.nav-ul');
+const nav = document.getElementsByTagName('nav');
+const bars = document.querySelectorAll('.ham span');
+
+ham.addEventListener('click', ()=>{
+    links.classList.toggle('active');
+    nav[0].classList.toggle('nav-fix');
+    bars.forEach(child => {
+        child.classList.toggle('efect');
+    })
+})

@@ -15,25 +15,19 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
     <!-- Personal CSS -->
+    <link rel="stylesheet" href="./../CSS/base1.css">
     <link rel="stylesheet" href="./../CSS/styles.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4c62087cc0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <?php
+    include("includes/header.php")
+    ?>
     <div class="container">
-        <nav>
-            <div class="nav">
-                <ul>
-                    <li class="nav-li">
-                        <a href="#">My proyects</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
         <main>
             <section class="introduction">
                 <h1>
@@ -174,7 +168,8 @@
                                 <div>
                                     <h3>SebPolPier</h3>
                                     <p>Test website that is dedicated to importing computer hardware in order to solve the shortage of these by their price increase.</p>
-                                    <a href="#">Visit Website</a>
+                                    <a class="details-proyect" href="#"><b>More info</b></a>
+                                    <a class="visit-proyect" href="#">Visit Website</a>
                                 </div>
                             </div>
                         </div>
@@ -186,7 +181,8 @@
                                 <div>
                                     <h3>SebPolPier</h3>
                                     <p>Test website that is dedicated to importing computer hardware in order to solve the shortage of these by their price increase.</p>
-                                    <a href="#">Visit Website</a>
+                                    <a class="details-proyect" href="#"><b>More info</b></a>
+                                    <a class="visit-proyect" href="#">Visit Website</a>
                                 </div>
                             </div>
                         </div>
@@ -198,19 +194,19 @@
             <h1>Contact me</h1>
             <form class="contact-form" action="">
                 <div class="input-container input-name">
-                    <input class="field-name" type="text" >
+                    <input class="field-name" type="text">
                     <label class="lbl">
                         <span id="name">Name</span>
                     </label>
                 </div>
                 <div class="input-container input-email">
-                    <input class="field-email" type="email" >
+                    <input class="field-email" type="email">
                     <label class="lbl">
                         <span id="email">Email</span>
                     </label>
                 </div>
                 <div class="input-container textarea">
-                    <textarea class="field-msg message" ></textarea>
+                    <textarea class="field-msg message"></textarea>
                     <label class="lbl">
                         <span id="msg">Message</span>
                     </label>
@@ -227,12 +223,13 @@
         const config = {
             type: 'carousel',
             perView: 3,
+            autoplay: 5000,
             breakpoints: {
                 900: {
                     perView: 2
                 },
-                600:{
-                    perView:1
+                600: {
+                    perView: 1
                 }
             }
         }
@@ -241,13 +238,21 @@
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
-        ScrollReveal().reveal('.introduction', {delay: 500});
-        ScrollReveal().reveal('.skills', {delay: 500});
-        ScrollReveal().reveal('.portfolio', {delay: 500});
-        ScrollReveal().reveal('.contact', {delay: 500});
+        ScrollReveal().reveal('.introduction', {
+            delay: 500
+        });
+        ScrollReveal().reveal('.skills', {
+            delay: 500
+        });
+        ScrollReveal().reveal('.portfolio', {
+            delay: 500
+        });
+        ScrollReveal().reveal('.contact', {
+            delay: 500
+        });
     </script>
     <!-- Personal JS -->
-    <script src="./../JS/base.js"></script>
+    <script src="./../JS/base1.js"></script>
 </body>
 
 </html>

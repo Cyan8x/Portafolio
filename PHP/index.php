@@ -17,8 +17,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="./../CSS/base1.css">
-    <link rel="stylesheet" href="./../CSS/styles.css">
+    <link rel="stylesheet" href="./../CSS/base3.css">
+    <link rel="stylesheet" href="./../CSS/styles2.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4c62087cc0.js" crossorigin="anonymous"></script>
 </head>
@@ -192,31 +192,34 @@
         </main>
         <footer class="contact">
             <h1>Contact me</h1>
-            <form class="contact-form" action="">
+            <form class="contact-form" method="POST" id="form">
                 <div class="input-container input-name">
-                    <input class="field-name" type="text">
+                    <input class="field-name" type="text" name="name">
                     <label class="lbl">
                         <span id="name">Name</span>
                     </label>
                 </div>
                 <div class="input-container input-email">
-                    <input class="field-email" type="email">
+                    <input class="field-email" type="email" name="email">
                     <label class="lbl">
                         <span id="email">Email</span>
                     </label>
                 </div>
                 <div class="input-container textarea">
-                    <textarea class="field-msg message"></textarea>
+                    <textarea class="field-msg message" name="msg"></textarea>
                     <label class="lbl">
                         <span id="msg">Message</span>
                     </label>
                 </div>
                 <div class="input-container input-submit">
-                    <input type="submit" value="SEND MESSAGE">
+                    <input id="send" type="submit" value="SEND MESSAGE" name="send">
                 </div>
             </form>
+            <div id="messages">
+            </div>
         </footer>
     </div>
+
     <!-- Glide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
@@ -252,7 +255,7 @@
         });
     </script>
     <!-- Personal JS -->
-    <script src="./../JS/base1.js"></script>
+    <script src="./../JS/base6.js"></script>
 </body>
 
 </html>

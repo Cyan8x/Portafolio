@@ -265,6 +265,11 @@ input[type="submit"]:active{
     transition: all 0.3s ease;
 }
 
+.required:after{
+    border-bottom: 2px solid red;
+    transform: translateX(0%);
+}
+
 .lbl span{
     position: absolute;
     left: 15px;
@@ -300,6 +305,33 @@ input[type="submit"]:active{
 .input-container  input:focus + .lbl:after, .input-container textarea:focus + .lbl:after{
     transform: translateX(0%);
 }
+
+#messages{
+    text-align: center;
+}
+
+.hide-message{
+    display: none !important;
+}
+
+.error{
+    background: rgb(255, 0, 0);
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
+.success{
+    background: rgb(0, 146, 24);
+    display: inline-block;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 40px 0;
+}
+
 
 /* RESPONSIVE */
 

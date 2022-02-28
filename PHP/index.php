@@ -17,15 +17,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
     <!-- Personal CSS -->
-    <link rel="stylesheet" href="./../CSS/base3.css">
-    <link rel="stylesheet" href="./../CSS/styles2.css">
+    <link rel="stylesheet" href="./../CSS/base8.css">
+    <link rel="stylesheet" href="./../CSS/styles4.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4c62087cc0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <?php
-    include("includes/header.php")
+    include("includes/head_foot.php");
     ?>
     <div class="container">
         <main>
@@ -190,7 +190,7 @@
                 </div>
             </section>
         </main>
-        <footer class="contact">
+        <div class="contact">
             <h1>Contact me</h1>
             <form class="contact-form" method="POST" id="form">
                 <div class="input-container input-name">
@@ -217,9 +217,8 @@
             </form>
             <div id="messages">
             </div>
-        </footer>
+        </div>
     </div>
-
     <!-- Glide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
@@ -241,6 +240,9 @@
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
+        ScrollReveal().reveal('#head', {
+            delay: 500
+        });
         ScrollReveal().reveal('.introduction', {
             delay: 500
         });
@@ -253,9 +255,13 @@
         ScrollReveal().reveal('.contact', {
             delay: 500
         });
+        ScrollReveal().reveal('#footer', {
+            delay: 500
+        });
     </script>
     <!-- Personal JS -->
-    <script src="./../JS/base6.js"></script>
+    <script src="./../JS/base8.js"></script>
+    <script src="./../JS/formContact.js"></script>
 </body>
 
 </html>

@@ -12,9 +12,12 @@
     color: rgb(255, 255, 255);
 }
 
+.introduction span{
+    transition: color 0.4s;
+}
+
 .introduction span:hover {
     color: rgb(53, 255, 194);
-    transition: all 0.2s;
 }
 
 .introduction p {
@@ -242,6 +245,10 @@ input[type="submit"]:active{
 .input-submit{
     width: 100%;
     text-align: center;
+}
+
+.input-submit input{
+    cursor: pointer;
 }
 
 .lbl{

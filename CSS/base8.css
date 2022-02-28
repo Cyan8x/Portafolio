@@ -8,6 +8,7 @@ body {
     color: rgb(255, 255, 255);
     font-family: 'Saira', sans-serif;
     padding-bottom: 50px;
+    padding-left: 200px;
 }
 
 .container {
@@ -17,59 +18,102 @@ body {
 
 /*? NAV */
 
-header{
-    position: fixed;
-    width: 100%;
-    z-index: 200;
-}
-
 nav{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: space-around;
-    min-height: 8vh;
-    padding: 10px 0;
     background: #3b3c3d;
-    transition: background 0.5s;
-}
-
-.nav-fix{
+    width: 200px;
     position: fixed;
     z-index: 100;
+    left: 0;
+    top: 0;
+    right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.icon{
+    width: 100%;
     background: #1d1d1d;
 }
 
-.nav-ul{
-    display: flex;
-    padding: 0;
-    list-style: none;
+.icon a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 15px;
+}
+
+.icon a img{
+    width: 100%;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.icon a img:hover{
+    box-shadow: 4px 4px 4px rgba(53, 255, 194, 0.3);
 }
 
 .nav-ul li{
-    padding: 0 40px;
+    border-top: 0.5px solid #707070;
+    border-bottom: 0.5px solid #707070;
 }
 
 .nav-ul li a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-}
-
-.nav-ul.active{
-    display: flex;
-    animation: showNav 350ms ease-in-out both;
+    padding: 15px;
+    display: block;
+    text-align: center;
 }
 
 .nav-ul li a:hover{
-    color: rgb(53, 255, 194);
-    border-bottom: 1px solid rgb(53, 255, 194);
+    background: rgb(31, 151, 115,0.5);
 }
 
 .nav-ul li a:active{
-    opacity: 0.5;
+    background: rgba(16, 80, 61, 0.5);
+}
+
+.nav-ul, .more-contacts ul{
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-ul{
+    flex-direction: column;
+}
+
+.more-contacts ul{
+    flex-direction: row;
+    height: 200px;
+    justify-content: center;
+}
+
+.nav-ul li a, .more-contacts ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.more-contacts ul li{
+    font-size: 30px;
+    padding: 10px;
+}
+
+.more-contacts ul li a:hover{
+    color: rgb(53, 255, 194);
+}
+
+.more-contacts ul li a:active{
+    color: rgb(53, 255, 194, 0.6);
+}
+
+.active{
+    display: flex;
+    animation: showNav 350ms ease-in-out both;
 }
 
 .ham{
@@ -116,15 +160,18 @@ nav{
     }
 }
 
-/* RESPONSIVE */
-
-@media (min-width: 1300px){
-    nav{
-        position: relative !important;
-    }
-}
+/*? RESPONSIVE */
 
 @media (max-width:1299px){
+    body{
+        padding-left: 0;
+    }
+
+    nav{
+        display: none;
+        width: 100%;
+    }
+
     .ham{
         display: block;
         position: fixed;
@@ -136,44 +183,24 @@ nav{
         border-radius: 5px;
     }
 
-    nav{
-        display: inline;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 25px 0;
-        position: relative;
-        background: none;
+    .icon{
+        height: 300px;
     }
 
-    .nav-ul{
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        height: 92vh;
-        margin: 0;
-        width: 100%;
-        display: none;
-        opacity: 0;
+    .icon a{
+        height: 100%;
+        display: flex;
+        justify-content: center;
     }
 
-    .nav-ul li{
-        width: 100%;
-        text-align: center;
-        padding: 20px;
+    .icon a img{
+        height: 100%;
+        width: auto;
     }
-
-    .nav-ul li:hover{
-        background: rgb(31, 151, 115,0.5);
-    }
-
-    .nav-ul li a:hover{
-        color: #fff;
-        border-bottom: 1px solid rgb(255, 255, 255);
-    }
-}
-
-@media (max-width:599px){
 }
 
 @media (max-width:399px){
+    .icon{
+        height: 200px;
+    }
 }

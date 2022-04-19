@@ -9,6 +9,8 @@
     <title>Portfolio Salinas</title>
     <!-- Normalize -->
     <link rel="stylesheet" href="./../CSS/normalize.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="./../IMG/icon.png">
     <!-- Glide -->
     <link rel="stylesheet" href="./../CSS/glide.core.min.css">
     <link rel="stylesheet" href="./../CSS/glide.theme.min.css">
@@ -18,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,200;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
     <!-- Personal CSS -->
     <link rel="stylesheet" href="./../CSS/base8.css">
-    <link rel="stylesheet" href="./../CSS/styles4.css">
+    <link rel="stylesheet" href="./../CSS/styles5.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/4c62087cc0.js" crossorigin="anonymous"></script>
 </head>
@@ -168,21 +170,21 @@
                                 <div>
                                     <h3>SebPolPier</h3>
                                     <p>Test website that is dedicated to importing computer hardware in order to solve the shortage of these by their price increase.</p>
-                                    <a class="details-proyect" href="#"><b>More info</b></a>
-                                    <a class="visit-proyect" href="#">Visit Website</a>
+                                    <a class="visit-proyect" href="#"><b>More info</b></a>
+                                    <!-- <a class="visit-proyect" href="#">Visit Website</a> -->
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="img-efect">
-                            <img src="./../IMG/SebPolPier.PNG" alt="SebPolPier">
+                            <img src="./../IMG/Countdown Timer.PNG" alt="Countdown Timer">
                             <div class="proyect-info">
                                 <div>
-                                    <h3>SebPolPier</h3>
-                                    <p>Test website that is dedicated to importing computer hardware in order to solve the shortage of these by their price increase.</p>
-                                    <a class="details-proyect" href="#"><b>More info</b></a>
-                                    <a class="visit-proyect" href="#">Visit Website</a>
+                                    <h3>Countdown Timer</h3>
+                                    <p>Website showing countdown timer to new year 2023 </p>
+                                    <a class="visit-proyect" href="#"><b>More info</b></a>
+                                    <!-- <a class="visit-proyect" href="#">Visit Website</a> -->
                                 </div>
                             </div>
                         </div>

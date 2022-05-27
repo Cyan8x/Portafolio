@@ -1,0 +1,49 @@
+.container main{
+    padding-top: 100px;
+    width: 100%;
+}
+
+.container main h1{
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    padding-bottom: 30px;
+    transition: color 0.4s;
+}
+
+.container main h1:hover{
+    color: rgb(53, 255, 194);
+}
+
+.intro{
+    width: 100%;
+}
+
+.intro p{
+    font-size: 22px;
+    text-align: center;
+}
+
+.intro img{
+    width: 100%;
+}
+
+.codigo-fuente{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.codigo-fuente div{
+    flex: 1;
+}
+
+.codigo-fuente div img{
+    width: 100%;
+}
+
+
+

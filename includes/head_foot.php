@@ -2,15 +2,15 @@
     <nav id="nav">
         <div class="icon">
             <a href="./index.php">
-                <img src="./../IMG/icon.png" alt="">
+                <img src="./IMG/icon.png" alt="">
             </a>
         </div>
         <ul class="nav-ul">
             <li>
-                <a href="index.php">Dev. Leonardo</a>
+                <a href="./index.php">Dev. Leonardo</a>
             </li>
             <li>
-                <a href="myProyects.php">My proyects</a>
+                <a href="./myProyects.php">My proyects</a>
             </li>
         </ul>
         <div class="more-contacts">
@@ -22,8 +22,8 @@
         </div>
     </nav>
     <button class="ham" type="button">
-            <span class="br1"></span>
-            <span class="br2"></span>
-            <span class="br3"></span>
-        </button>
+        <span class="br1"></span>
+        <span class="br2"></span>
+        <span class="br3"></span>
+    </button>
 </header>

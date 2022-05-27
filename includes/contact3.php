@@ -75,7 +75,7 @@
                 <div>MESSAGE: $msg</div>
             </div>
             <div class='contacts'>
-                Email of Jhonny: <span>$email</span>
+                Email of $name: <span>$email</span>
             </div>
         </div>
     </div>

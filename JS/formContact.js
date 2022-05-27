@@ -104,9 +104,9 @@ form.addEventListener('submit',(e)=>{
         }
     } else {
         let formData = new FormData(form);
-        formData.append('email',myEmail);
+        //formData.append('email2',myEmail);
 
-        const url = './../PHP/contact3.php';
+        const url = './../includes/contact3.php';
 
         fetch(url,{
             method : 'POST',
